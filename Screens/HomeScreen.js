@@ -14,7 +14,7 @@ const HomeScreen = ({navigation}) => {
     const titulo=ciudad.toUpperCase();
 
     async function buscar (city) {
-        const key ="16d3374be7d74982724102c96d08327a";
+        const key ="d19a1e62a0eb9dd8d9a3c1d1bb4dba55";
         const api_url=`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
 
         const json= await fetch(api_url)
